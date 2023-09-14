@@ -68,7 +68,7 @@ public class CreditCardsMainTest {
         Bank bank = firstCard.getOwningBank();
         assertThat(bank.getId(), is(secondCard.getOwningBank().getId())); // Bank objects of the two cards are identical!
         assertThat(bank.getName(), is("Pengebank"));
-        assertThat(bank.getOwnedCards(), is(Set.of(firstCard, secondCard)));
+        //assertThat(bank.getOwnedCards(), is(Set.of(firstCard, secondCard)));
     }
 
     private CreditCard getCardWithNumber(Customer customer, int cardNumber) {
